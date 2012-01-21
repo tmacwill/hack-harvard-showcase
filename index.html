@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <style>
+
+            #showcase h3 {
+                margin-bottom: 0 !important;
+            }
+
+            #showcase h4 {
+                margin-top: 2px !important;
+                font-size: 14px !important;
+            }
+            
+            #footer-schedule .ui-icon {
+                background:  url(calendar.png) 50% 50% no-repeat; 
+                background-size: 18px;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+            }
+
+            #footer-apps .ui-icon {
+                background:  url(macbook.png) 50% 50% no-repeat; 
+                background-size: 18px;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+            }
+
+            #footer-sponsors .ui-icon {
+                background:  url(gift.png) 50% 50% no-repeat; 
+                background-size: 18px;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+            }
+
+            .logo {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .ui-btn-active {
+                background: #ac0000;
+            }
+
+            h1 {
+                margin-bottom: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+                padding: .4em 15px .4em 15px !important;
+            }
+
+            .ui-li-aside {
+                font-weight: bold;
+                font-size: 13.5px;
+            }
+
+        </style>
+
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script>
+            $(document).bind("mobileinit", function(){
+                $.mobile.touchOverflowEnabled = true;
+            });
+        </script>
+    </head>
+    <body>
+
+    <div id="showcase" data-role="page">
+        <div data-role="header">
+            <div>
+                <img src="logo.png" class="logo" />
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <h3>Intro to Hack</h3>
+                    <h4>Tommy MacWilliam and Julia Mitelman</h4>
+                    <p class="ui-li-aside">3:05 - 3:15</p>
+                </li>
+                <li>
+                    <h3>Sponsor Keynote</h3>
+                    <h4>Samuel Clemens, Co-Founder, InsightSquared</h4>
+                    <p class="ui-li-aside">3:15 - 3:30</p>
+                </li>
+                <li>
+                    <h3>Panel + Q&A</h3>
+                    <h4>
+                        Sean Dalton (General Partner, Highland Capital)<br />
+                        Rob Go (Co-Founder & Partner, Nextview Ventures)<br />
+                        Mobeen Syed (VP of Tech, Gemvara)
+                    </h4>
+                    <p class="ui-li-aside">3:30 - 4:15</p>
+                </li>
+                <li>
+                    <h3>Student Pitches</h3>
+                    <h4>Hack Harvard Participants</h4>
+                    <p class="ui-li-aside">4:15 - 4:45</p>
+                </li>
+                <li>
+                    <h3>Wrap-Up</h3>
+                    <h4>Tommy MacWilliam and Julia Mitelman</h4></h4>
+                    <p class="ui-li-aside">5:00 - 5:05</p>
+                </li>
+                <li>
+                    <h3>Demo Fair</h3>
+                    <h4>In Ticknor Lounge</h4>
+                    <p class="ui-li-aside">5:05 - 6:00</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="footer-schedule" data-icon="custom" href="#" class="ui-btn-active ui-state-persist">Schedule</a></li>
+                    <li><a id="footer-apps" data-icon="custom" href="#apps">Apps</a></li>
+                    <li><a id="footer-sponsors" data-icon="custom" href="#sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="apps" data-role="page">
+        <div data-role="header">
+            <div>
+                <img src="logo.png" class="logo" />
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="http://advisemeharvard.com" target="_blank">
+                        <h3>Advise Me Harvard</h3>
+                        <p>Julia MacDonnell</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://cloud.cs50.net/~ruthfong/bagit" target="_blank">
+                        <h3>BagIt</h3>
+                        <p>Ruth Fong, Eric Lu</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Blockies</h3>
+                        <p>Mimi Xu, Nina Gu</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://collegeray.com" target="_blank">
+                        <h3>CollegeRay</h3>
+                        <p>William Chen, Felix Wong, Changlin Li</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://enflightened.com">
+                        <h3>Enflightened</h3>
+                        <p>Liora Simozar</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>HottSpot</h3>
+                        <p>Vidal Ekechukwu</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kindify.com">
+                        <h3>Kindify</h3>
+                        <p>Nuseir Yassin</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kiwikr.com" target="_blank">
+                        <h3>Kiwikr</h3>
+                        <p>Roy Zhang, Dario Sava</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Harvard Memes</h3>
+                        <p>Ian Thompson</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>My Benefits</h3>
+                        <p>Julia Winn</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Nebulock</h3>
+                        <p>Nevin Raj</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>PollVaultr</h3>
+                        <p>Merrill Lutsky, Lexi Ross</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hcs.harvard.edu/projectx" target="_blank">
+                        <h3>ProjectX</h3>
+                        <p>Ali Nahm, Sury Dewaayu</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Tripossible</h3>
+                        <p>Kara Yu, Winston Waters II, Vinay Trivedi</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>NEEDS A NAME</h3>
+                        <p>David Liu, Brandon Sim</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="footer-schedule" data-icon="custom" href="#showcase">Schedule</a></li>
+                    <li><a id="footer-apps" data-icon="custom" href="#" class="ui-btn-active ui-state-persist">Apps</a></li>
+                    <li><a id="footer-sponsors" data-icon="custom" href="#sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="sponsors" data-role="page">
+        <div data-role="header">
+            <div>
+                <img src="logo.png" class="logo" />
+            </div>
+        </div>
+        <div data-role="content">
+            <div style="margin: 0 auto; text-align: center">
+                <br />
+                <img src="images/highland.gif" /><br /><br />
+                <img src="images/greylock.png" /><br /><br />
+                <img src="images/nextview.png" /><br /><br />
+                <img src="images/gc.png" /><br /><br />
+                <img src="images/flybridge.png" /><br /><br />
+                <img src="images/tivli.png" /><br /><br />
+                <img src="images/hi.png" /><br /><br />
+                <img src="images/cs50.png" /><br /><br />
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="footer-schedule" data-icon="custom" href="#showcase">Schedule</a></li>
+                    <li><a id="footer-apps" data-icon="custom" href="#apps">Apps</a></li>
+                    <li><a id="footer-sponsors" data-icon="custom" href="#" class="ui-btn-active ui-state-persist">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>
